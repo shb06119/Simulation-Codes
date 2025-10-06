@@ -1,12 +1,5 @@
 # Simulation-Code
-# This is the code for the conditional poisson regression model based simulation which generates 20 datasets.
-# Note that the original data includes two regions which have observational error.
-# In particular, the region 57 and 86 have missing death counts for 2015-2017 and 2017, respectively.
-# Therefore, we exclude year 2015-2017 from the 57th region and 2015 from the 86th region.
-# Due to this treatment, simulating death count differs by region.
-# This is why we need to carefully consider data-generating code.
-# By the way, this code creates data for 2019-2022, thereby no need to consier missing data. 
-# However, we will consider the above missing data case after this.
+This is the code for the conditional poisson regression model based simulation which generates 20 datasets. Note that the original data includes two regions which have observational error. In particular, the region 57 and 86 have missing death counts for 2015-2017 and 2017, respectively. Therefore, we exclude year 2015-2017 from the 57th region and 2015 from the 86th region. Due to this treatment, simulating death count differs by region. This is why we need to carefully consider data-generating code. By the way, this code creates data for 2019-2022, thereby no need to consier missing data. However, we will consider the above missing data case after this.
 
 ```{r, warning=FALSE, message=FALSE}
 library(sf); library(gnm); library(data.table); library(lubridate); library(dplyr)
