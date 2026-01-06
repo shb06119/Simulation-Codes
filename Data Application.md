@@ -1,4 +1,4 @@
-# Data Application
+# 3. Data Application
 We apply three modeling approahces (two-stage method, Bayesian hierarchical model, and spatial Bayesian hierarchical model) to empirical dataset. The dataset includes daily death counts, ozone concentration (8 hour moving average), and temperature (Kelvin) for 254 districts of South Korea from 2015 to 2021. We use 77 districts of Seoul, Incheon, and Gyeonggi among 254 districts. The area of Michuhol-gu was excluded from the analysis from 2015 to 2017 because no deaths were recorded during this period due to measurement errors. Likewise, the area of Bucheon-si was excluded for the year of 2015 for the same reason.
 ```{r, warning=FALSE, message=FALSE}
 # Necessary packages
